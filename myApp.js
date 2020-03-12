@@ -13,9 +13,9 @@
 // as MONGO_URI. Connect to the database using the following syntax:
 //
 // mongoose.connect(<Your URI>, { useNewUrlParser: true, useUnifiedTopology: true }); 
-var mongoose=require("mongoose");
-
-mongoose.connect(process.env.URI, { useNewUrlParser: true, useUnifiedTopology: true }); 
+/** 1) Install & Set up mongoose */
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGO_URI);
 
 
 /** # SCHEMAS and MODELS #
